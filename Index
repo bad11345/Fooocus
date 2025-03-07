@@ -1,0 +1,76 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Early Birthday Yacoba!</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        .cake {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            background-color: #f7a4b6; /* Cake color */
+            border-radius: 20px;
+            margin: 20px auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .candle {
+            position: absolute;
+            width: 12px;
+            height: 30px;
+            background-color: #f39c12; /* Candle color */
+            border-radius: 5px;
+            bottom: 150px;
+            animation: flicker 0.2s infinite alternate;
+        }
+        .candle:nth-child(1) { left: 30px; }
+        .candle:nth-child(2) { left: 90px; }
+        .candle:nth-child(3) { left: 150px; }
+
+        @keyframes flicker {
+            0% {
+                transform: translateY(0) scaleY(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-3px) scaleY(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) scaleY(1);
+                opacity: 1;
+            }
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Happy Early Birthday, Yacoba!</h1>
+        <p>Wishing you a fantastic day tomorrow filled with joy and laughter!</p>
+        <div class="cake">
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+        </div>
+    </div>
+</body>
+</html>
